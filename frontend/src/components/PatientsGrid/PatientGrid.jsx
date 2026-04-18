@@ -1,3 +1,4 @@
+import Patient from '../Patient/Patient.jsx';
 import './PatientGrid.css';
 
 function PatientGrid(){
@@ -15,45 +16,19 @@ function PatientGrid(){
             </div>
 
             <div className="patient-grid-container">
-                <div className="test-card">
-                    test
-                </div>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
+                <Patient/>
 
-                <div className="test-card">
-                    test
-                </div>
 
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
-
-                <div className="test-card">
-                    test
-                </div>
+                
             </div>
         </div>
     )

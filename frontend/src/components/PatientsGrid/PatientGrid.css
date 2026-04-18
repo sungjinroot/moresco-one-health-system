@@ -5,6 +5,9 @@
 
     justify-content: center;
     align-items: center;
+
+
+    background-image: url(/src/assets/crystal.avif);
 }
 
 .patient-grid-container{
@@ -17,13 +20,11 @@
     padding: 15px;
 
     grid-template-columns: repeat(5,1fr);
-    gap: 15px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
 }
 
-.test-card{
-    background-color: #00006F;
-    border-radius: 16px;
-}
+
 
 
 
