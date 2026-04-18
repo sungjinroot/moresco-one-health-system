@@ -1,4 +1,6 @@
 import NavBar from './components/NavBar/NavBar.jsx';
+import PatientGrid from './components/PatientsGrid/PatientGrid.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import './App.css';
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
   return (
     <>
       <NavBar/>
+      <PatientGrid/>
+      <Footer/>
     </>
   )
 }

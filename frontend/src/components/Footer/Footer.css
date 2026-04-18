@@ -1,0 +1,15 @@
+
+.footer{
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-pagination{
+    background-color: #0D2B77;
+    padding: 10px;
+
+    border-radius: 200px;
+}
