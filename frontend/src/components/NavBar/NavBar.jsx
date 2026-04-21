@@ -11,12 +11,19 @@ function NavBar() {
                     <p> Employee Health Tracking System </p>
                 </div>
             </div>
-
+            
+            
             <div className="nav-center">
-                <div className="nav-center-box">
-                    Patients
+                <div className="grid-options">
+                    <input type="text" placeholder="Search Patient..."/>
+                    <select>
+                        <option>
+                            Sort
+                        </option>
+                    </select>
                 </div>
             </div>
+        
 
             <div className="nav-end">
                 <div className="nav-profile">

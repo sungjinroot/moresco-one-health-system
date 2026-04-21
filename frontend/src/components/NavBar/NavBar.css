@@ -1,70 +1,127 @@
-
 .nav-container{
     background-color: #00006F;
-    padding: 6px;
+    padding: 10px 30px;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
+/* LEFT */
 .nav-left{
     display: flex;
-    gap: 5px;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo-one{
+    height: 70px;
+    object-fit: contain;
 }
 
 .nav-system-name{
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-}
-
-.nav-system-name{
     color: white;
+    line-height: 1.2;
 }
 
-.nav-logo-one{
-    height: 85px;
+.nav-system-name h1{
+    font-size: 32px;
+    margin: 0;
 }
 
+.nav-system-name p{
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+
+/* CENTER */
 .nav-center{
-    position: absolute;
-    left: 43%;
-}
-
-.nav-center-box{
-    background-color: #112E78;
-    padding: 15px;
-    width: 300px;
-    border-radius: 10px;
+    flex: 1;
     display: flex;
     justify-content: center;
-
-    color: white;
-    font-size: 30px;
 }
 
+.grid-options{
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.grid-options input,
+.grid-options select{
+    padding: 10px 14px;
+    border: 1px solid #4da3ff;
+    border-radius: 20px;
+
+    background-color: #112E78;
+    color: #ffffff;
+
+    outline: none;
+    font-size: 14px;
+
+    transition: all 0.2s ease;
+}
+
+.grid-options input{
+    flex: 2;
+}
+
+.grid-options select{
+    flex: 1;
+    cursor: pointer;
+}
+
+.grid-options input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.grid-options input:focus,
+.grid-options select:focus{
+    border-color: #ffffff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+
+/* RIGHT */
 .nav-end{
     display: flex;
-    width: 20%;
-    justify-content: end;
-    gap: 20px;
-    margin-right: 30px;
-}
-
-.nav-profile h5{
-    align-self: flex-end;
+    align-items: center;
+    gap: 15px;
 }
 
 .nav-profile{
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
+    text-align: right;
+}
+
+.nav-profile h3{
+    margin: 0;
+    font-size: 16px;
+}
+
+.nav-profile h5{
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
 }
 
 .nav-end img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
     cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.nav-end img:hover{
+    transform: scale(1.05);
 }

@@ -1,40 +1,39 @@
 .patient-card {
-    background-color: #00006F;
+    background-color: #0D2B77;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 265px;
 
     cursor: pointer;
-
     transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 
-    box-shadow:
-        0 4px 10px rgba(255, 255, 255, 0.10),
-        0 10px 25px rgba(255, 255, 255, 0.08),
-        0 20px 45px rgba(255, 255, 255, 0.06);
+    border: 5px solid #0A72AD;
 }
 
 .patient-card img {
     margin-top: 15px;
-    height: 55%;
-    width: 55%;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 100px;
 
     transition: transform 0.25s ease, filter 0.25s ease;
+
+    border: 5px solid #0A72AD;
 }
 
 .patient-card:hover {
     transform: translateY(-6px) scale(1.03);
 
     box-shadow:
-        0 0 10px rgba(255, 255, 255, 0.25),
-        0 0 25px rgba(255, 255, 255, 0.20),
-        0 0 45px rgba(255, 255, 255, 0.15),
-        0 20px 60px rgba(180, 200, 255, 0.25),
-        0 35px 90px rgba(180, 200, 255, 0.20);
+        0 0 10px rgba(0, 0, 111, 0.25),
+        0 0 25px rgba(0, 0, 111, 0.20),
+        0 0 45px rgba(0, 0, 111, 0.15),
+        0 20px 60px rgba(0, 0, 111, 0.25),
+        0 35px 90px rgba(0, 0, 111, 0.20);
 }
 
 .patient-card:hover img {
@@ -47,22 +46,20 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.patient-card h2,
-.patient-card h4 {
+.patient-card h1,
+.patient-card h3 {
     position: relative;
     display: inline-block;
-    color: white;
 }
 
-.patient-card h2::after,
-.patient-card h4::after {
+.patient-card h1::after,
+.patient-card h3::after {
     content: "";
     position: absolute;
     left: 50%;
     bottom: -4px;
     width: 100%;
     height: 2px;
-    background-color: white;
 
     transform: translateX(-50%) scaleX(0);
     transform-origin: center;
@@ -70,16 +67,22 @@
     transition: transform 0.4s ease;
 }
 
-.patient-card:hover h2::after,
-.patient-card:hover h4::after {
+.patient-card:hover h1::after,
+.patient-card:hover h3::after {
     transform: translateX(-50%) scaleX(1);
 }
 
-.patient-card:hover h4::after {
+.patient-card:hover h3::after {
     transition-delay: 0.08s;
 }
 
-.patient-card h4::after {
+.patient-card h3::after {
     height: 1px;
     opacity: 0.8;
+}
+
+.patient-names{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
