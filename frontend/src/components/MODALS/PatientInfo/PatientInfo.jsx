@@ -60,18 +60,15 @@ function PatientInfo(props){
                             <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
-                                                        <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
+
 
                            
-                            
-
-
                         </div>
                     </div>
                </div>

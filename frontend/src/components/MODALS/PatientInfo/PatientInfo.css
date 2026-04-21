@@ -1,6 +1,7 @@
 
 .modal-body{
     padding: 0px !important;
+    min-height: 0;
 }
 
 .header-logo{
@@ -15,6 +16,8 @@
 .patient-info-container{
     display: flex;
     height: 100%;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .patient-info-details-left{
@@ -28,10 +31,13 @@
 
     display: flex;
     flex-direction: column;
+
+    
 }
 
 .patient-info-details-right{
     flex: 3;
+    overflow: hidden;
 }
 
 .patient-profile{
@@ -61,6 +67,8 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    min-height: 0; 
 }
 
 .patient-info-details-navigation{
@@ -99,6 +107,9 @@
 .patient-records-accordion-container{
     margin-top: 10px;
     flex: 1;
-    max-height: calc(95vh - 100px);
-    overflow: scroll;
+
+    min-height: 0;
+    overflow-y: auto;
+
 }
+
