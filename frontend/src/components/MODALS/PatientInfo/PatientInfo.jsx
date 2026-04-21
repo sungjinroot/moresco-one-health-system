@@ -1,4 +1,5 @@
 import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
 import AccordionRecord from './AccordionRecord/AccordionRecord.jsx';
 import { Tabs, Tab } from "@mui/material";
 import './PatientInfoHeight.css'
@@ -6,6 +7,8 @@ import './PatientInfoWidth.css';
 import './PatientInfo.css'
 
 function PatientInfo(props){
+
+    const [activeTab, setActiveTab] = useState(0);
 
     return (
         <Modal show={props.showPatient} onHide={() => props.setShowPatient(false)} aria-labelledby="example-custom-modal-styling-title" contentClassName="patientInfoHeight" dialogClassName="patientInfoWidth">
@@ -25,8 +28,11 @@ function PatientInfo(props){
                         </div>
 
                         <div className="profile-tabs-options">
-                            MUI TABS Go here
+                            <button> Personal </button>
+                            <button> Health </button>
                         </div>
+
+                        {/*Tabs here*/}
 
                     </div>
 
