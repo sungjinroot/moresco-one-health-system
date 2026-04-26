@@ -1,0 +1,50 @@
+
+.personal-container{
+    margin-top: 20px;
+    border: 5px solid #0A72AD;
+    border-radius: 16px;
+    height: 100%;
+
+    padding: 20px;
+
+}
+
+.patient-names-forms{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.patient-names-input{
+    background-color: #00006F;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.patient-names-input input{
+    margin-top: 5px;
+    width: 100%;
+    color: white;
+    border: none;             
+    border-bottom: 1.5px solid #ccc;  
+    outline: none;            
+    background: transparent;   
+    padding: 6px 2px;         
+}
+
+.patient-names-input input:focus{
+    border-bottom: 1.5px solid #fff; 
+}
+
+
+
+
+.patient-demographic-fields{
+    margin-top: 10px;
+}
+
+.patient-age-fields{
+    background-color: orange;
+}

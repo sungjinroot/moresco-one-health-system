@@ -6,3 +6,51 @@
     margin-left: 20px;
 }
 
+.record-headers{
+    display: flex;
+    height: 380px;
+}
+
+.record-left{
+    background-color: red;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.record-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.record-complains-form{
+    display: flex;
+    justify-content: center;
+}
+
+.record-complains-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.record-complains-input input{
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+}
+
+.record-complains-form img{  
+    height: 80px;
+}

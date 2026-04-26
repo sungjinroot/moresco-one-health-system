@@ -2,6 +2,10 @@ import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import AccordionRecord from './AccordionRecord/AccordionRecord.jsx';
 import { Tabs, Tab } from "@mui/material";
+
+import Personal from './Pages/Personal/Personal.jsx';
+import Health from './Pages/Health/Health.jsx';
+
 import './PatientInfoHeight.css'
 import './PatientInfoWidth.css';
 import './PatientInfo.css'
@@ -28,16 +32,21 @@ function PatientInfo(props){
                         </div>
 
                         <div className="profile-tabs-options">
-                            <button> Personal </button>
-                            <button> Health </button>
+
+                            <Tabs value={activeTab} onChange={(event, newValue) => setActiveTab(newValue)} aria-label="patient info tabs" variant="fullWidth" sx={{ width: "100%" }}>
+                                <Tab label="Personal" sx={{ flex: 1 }} />
+                                <Tab label="Health" sx={{ flex: 1 }} />
+                            </Tabs>     
+
                         </div>
 
-                        {/*Tabs here*/}
+                        { activeTab === 0 && <Personal/> }
+                        { activeTab === 1 && <Health/> }
+
 
                     </div>
 
                     <div className="patient-info-details-right">
-                        <h1> Health Records </h1>
                         <div className="patient-info-details-navigation">
                             
                             <button> New Record </button>
@@ -59,20 +68,10 @@ function PatientInfo(props){
                             <AccordionRecord/>
                             <AccordionRecord/>
                             <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
-                            <AccordionRecord/>
 
+                        
+                            
+                            
 
                            
                         </div>
