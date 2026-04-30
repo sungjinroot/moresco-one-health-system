@@ -41,10 +41,58 @@
 
 
 
-.patient-demographic-fields{
+.patient-demographic-forms{
     margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
 
-.patient-age-fields{
-    background-color: orange;
+.patient-birthdate-input{
+    background-color: #00006F;
+    flex: 2;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.patient-sex-input{
+    background-color: #00006F;
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 187px;
+}
+
+.patient-birthdate{
+    background-color: red;
+    flex: 1;
+}
+
+.patient-age{
+    background-color: green;
+    flex: 1;
+}
+
+.patient-measurement-forms{
+    margin-top: 10px;
+    background-color: #00006F;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.patient-measurement-input{
+    background-color: red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }

@@ -25,16 +25,44 @@ function Personal(){
                             <input/>
                         </div>
                     </div>  
-                </div>
 
-                <div className="patient-demographic-fields">
-                
-                    <div className="patient-age-fields">
-                        age
+                    <div className="patient-demographic-forms">
+                        <div className="patient-birthdate-input">
+                            <div className="patient-birthdate">
+                                <label> Birth Date </label>
+                                <p> birthday here </p>
+                            </div>
+
+                            <div className="patient-age">
+                                <label> Age </label>
+                                <p> age here </p>
+                            </div>
+                        </div>
+
+                        <div className="patient-sex-input">
+                            <label> Sex </label>
+                            <select> 
+                                <option> Male </option>
+                                <option> Female </option>
+                            </select>
+                        </div>
                     </div>
 
+                    <div className="patient-measurement-forms">
+                        <div className="patient-measurement-input">
+                            <label> Height </label>
+                        </div>
 
+                        <div className="patient-measurement-input">
+                            <label> Weight </label>
+                        </div>
+
+                        <div className="patient-measurement-input">
+                            <label> BMI </label>
+                        </div>
+                    </div>
                 </div>
+
 
             
             </div>
