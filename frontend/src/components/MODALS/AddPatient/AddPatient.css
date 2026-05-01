@@ -1,0 +1,55 @@
+.addpatient-width {
+  max-width: 700px !important;
+  width: 700px !important;
+}
+
+.addpatient-height {
+  height: 550px;
+}
+
+.addpatient-height .modal-body {
+  overflow-x: hidden;
+}
+
+
+.field {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.small-input {
+  width: 80px;
+}
+
+.row {
+  display: flex;
+  gap: 3px;
+}
+
+.radio-group {
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+  background-color: white;
+}
+
+.radio-group label {
+  margin: 0;
+  line-height: 1;
+}
